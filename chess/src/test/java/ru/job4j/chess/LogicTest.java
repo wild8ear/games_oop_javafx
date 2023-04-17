@@ -23,6 +23,7 @@ public class LogicTest {
     public void whenMoveThenOccupiedCellException() {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.C1));
+        logic.add(new PawnBlack(Cell.D2));
         OccupiedCellException exception = assertThrows(OccupiedCellException.class, () -> {
             logic.move(Cell.C1, Cell.D2);
         });
