@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import ru.job4j.chess.firuges.Cell;
 
 public class BishopBlackTest {
+
         @Test
         public void whenPositionC8() {
                 BishopBlack bb = new BishopBlack(Cell.C1);
